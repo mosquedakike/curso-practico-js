@@ -10,8 +10,6 @@ function perimetroCuadrado(lado) {
 function areaCuadrado(lado) {
     return lado * lado;
 }
-
-
 console.groupEnd();
 
 
@@ -52,5 +50,22 @@ function perimetroCirculo(radio) {
 function areaCirculo(radio) {
     return (radio * radio) * PI;
 }
-
 console.groupEnd();
+
+
+//interaccion con html
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calculAreaCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    
+    const area = areaCuadrado(value);
+    alert(area);
+}
