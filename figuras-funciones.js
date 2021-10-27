@@ -54,6 +54,7 @@ console.groupEnd();
 
 
 //interaccion con html
+//calcular area y perimetro de un cuadrado
 function calcularPerimetroCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
@@ -69,3 +70,30 @@ function calculAreaCuadrado() {
     const area = areaCuadrado(value);
     alert(area);
 }
+
+//triangulo
+function calcularPerimetroTriangulo() {
+    const inputUno = document.getElementById("InputTrianguloA");
+    const valueUno = inputUno.value;
+    const inputDos = document.getElementById("InputTrianguloB");
+    const valueDos = inputDos.value;
+    const inputTres = document.getElementById("inputTrianguloC");
+    const valueTres = inputTres.value;
+
+    const perimetro = perimetroTriangulo(Number(valueUno), Number(valueDos), Number(valueTres));
+    alert(perimetro);
+}
+
+function calcularAreaTriangulo() {
+    //(base * altura) / 2;
+    const inputTres = document.getElementById("inputTrianguloC");
+    const valueTres = inputTres.value; 
+    const inputCuatro = document.getElementById("inputTrianguloD");
+    const valueCuatro = inputCuatro.value;
+
+    const area = areaTriangulo(Number(valueTres), Number(valueCuatro));
+    alert(area);
+}
+
+
+//circulo
