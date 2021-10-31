@@ -11,9 +11,9 @@
         <h1>Figuras geometricas</h1>
         <p>Este es el primer taller del curso practico de JavaScript</p>
     </header>
-    <main>
+    <hr>
         <section class="Cuadrado">
-            <p>Calcula el area y el perimetro de un cuadrado</p>
+            <h2>Calcula el area y el perimetro de un cuadrado</h2>
             <form action="InputCuadrado">
                 <label>Escribe cuanto mide cada lado del cuadrado:</label>
                 <input id="InputCuadrado" type="number">
@@ -21,8 +21,9 @@
                 <button type="button" onclick="calculAreaCuadrado()">Calcular el area</button>
             </form>
         </section>
+        <hr>
         <section class="triangulo">
-            <p>Calcula el area y el perimetro de un triangulo</p>
+            <h2>Calcula el area y el perimetro de un triangulo</h2>
             <form action="">
                 <label>Escribe cuanto miden los dos lados y el area del triangulo</label>
                 <input id="InputTrianguloA" type="number" placeholder="Lado 1">
@@ -31,6 +32,17 @@
                 <input id="inputTrianguloD" type="number" placeholder="Altura">
                 <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
                 <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h2>Calcula el area y el perimetro de un circulo</h2>
+            <form action="">
+                <label for="">Escribe cuanto mide el diametro  y el radio de un circulo</label>
+                <input id="InputCirculoRadio" type="number" placeholder="Radio">
+                <button type="button" onclick="calcularDiametroCirculo()">Calcular diametro</button>
+                <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
+                <button type="button" onclick="calcularAreaCirculo()">Calcular el area</button>
             </form>
         </section>
     </main>

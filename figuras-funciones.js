@@ -97,3 +97,16 @@ function calcularAreaTriangulo() {
 
 
 //circulo
+function calcularDiametroCirculo() {
+    const input = document.getElementById("InputCirculoRadio");
+    const value = input.value;
+    
+    const diametro = value * 2;
+    alert(diametro);
+}
+
+function calcularPerimetroCirculo() {
+    const Pi = Math.PI;
+    const diametro = calcularDiametroCirculo();
+    const input = document.getElementById("InputCirculo");
+}
